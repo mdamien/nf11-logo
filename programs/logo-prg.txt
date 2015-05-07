@@ -1,0 +1,4 @@
+donne "a 10+10
+av :a * :a
+repete 4.4+4 [ av loop bc av 20 ]
+si :a < 10 [ av 10 ]
