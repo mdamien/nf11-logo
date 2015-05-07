@@ -28,9 +28,21 @@ instruction :
   | 'repete' expr '[' liste_instructions ']' # repete
   | 'donne' DECL_VAR expr # donneExpr
   | 'si' booleanExpr '[' liste_instructions ']' # si
+  | 'si' booleanExpr '[' liste_instructions ']' '[' liste_instructions ']' # siSinon
+  | 'tantque' booleanExpr '[' liste_instructions ']' # tantQue
 ;
 
-booleanExpr: expr BOOLEAN_OPERATOR expr ;
+booleanExpr: expr BOOLEAN_OPERATOR expr;
+
+/*
+booleanExpr:
+  expr BOOLEAN_OPERATOR expr #booleanOperation
+  | true #true
+  | false #false
+  | booleanExpr OR booleanExpr #or
+  | booleanExpr AND booleanExpr #and
+;
+*/
 
 expr:
 	expr ('*' | '/' ) expr #mult

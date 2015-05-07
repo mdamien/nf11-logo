@@ -83,8 +83,14 @@ public class LogoController {
 	   logarea.clear();
    }
 	private void createSwingContent() {
-		SwingUtilities.invokeLater(() -> swingNode
-				.setContent(getjTreeViewPane()));
+		SwingUtilities.invokeLater(new Runnable() {
+			
+			@Override
+			public void run() {
+				swingNode.setContent(getjTreeViewPane());
+				
+			}
+		});
 	}
 
 	public JPanel getjTreeViewPane() {
@@ -94,10 +100,12 @@ public class LogoController {
 			jTreeViewPane.setLayout(new BorderLayout());
 			jTreeViewPane.add(getJScrollASTPane(), BorderLayout.CENTER);
 			scaleSlider.setValue(0);
+			/*
 			scaleSlider.valueProperty().addListener((obs, oldv, newval) -> {
 				if (viewer != null)
 					viewer.setScale((double) newval / 1000.0 + 1.0);
 			});
+			*/
 
 		}
 		return jTreeViewPane;

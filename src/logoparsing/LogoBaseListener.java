@@ -1,4 +1,4 @@
-// Generated from grammar/Logo.g4 by ANTLR 4.5
+// Generated from Logo.g4 by ANTLR 4.5
 
   package logoparsing;
 
@@ -182,6 +182,30 @@ public class LogoBaseListener implements LogoListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitSi(LogoParser.SiContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSiSinon(LogoParser.SiSinonContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSiSinon(LogoParser.SiSinonContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTantQue(LogoParser.TantQueContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTantQue(LogoParser.TantQueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

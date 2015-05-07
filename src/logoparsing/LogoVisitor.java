@@ -1,4 +1,4 @@
-// Generated from grammar/Logo.g4 by ANTLR 4.5
+// Generated from Logo.g4 by ANTLR 4.5
 
   package logoparsing;
 
@@ -109,6 +109,20 @@ public interface LogoVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitSi(LogoParser.SiContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code siSinon}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSiSinon(LogoParser.SiSinonContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code tantQue}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTantQue(LogoParser.TantQueContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link LogoParser#booleanExpr}.
 	 * @param ctx the parse tree

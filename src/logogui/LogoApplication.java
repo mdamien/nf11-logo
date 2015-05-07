@@ -15,6 +15,7 @@ public class LogoApplication extends Application {
 		Parent root = loader.load();
 
 		stage.setTitle("Logo Application");
+		stage.setTitle("Logo Application");
 		stage.setScene(new Scene(root,1200,750));
 		stage.show();
 

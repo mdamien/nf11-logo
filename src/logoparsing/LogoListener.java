@@ -1,4 +1,4 @@
-// Generated from grammar/Logo.g4 by ANTLR 4.5
+// Generated from Logo.g4 by ANTLR 4.5
 
   package logoparsing;
 
@@ -174,6 +174,30 @@ public interface LogoListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSi(LogoParser.SiContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code siSinon}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 */
+	void enterSiSinon(LogoParser.SiSinonContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code siSinon}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 */
+	void exitSiSinon(LogoParser.SiSinonContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code tantQue}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 */
+	void enterTantQue(LogoParser.TantQueContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code tantQue}
+	 * labeled alternative in {@link LogoParser#instruction}.
+	 * @param ctx the parse tree
+	 */
+	void exitTantQue(LogoParser.TantQueContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link LogoParser#booleanExpr}.
 	 * @param ctx the parse tree
